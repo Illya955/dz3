@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Карта зображення</title>
+</head>
+<body>
+    <h1>Інтерактивна карта України</h1>
+
+    <!-- Зображення у повному розмірі -->
+    <img src="1756B70C-1715-4ADC-B9FB-7DD4F683CC60.jpeg" alt="Карта України" usemap="#ukraine-map">
+
+    <!-- Карта з клікабельними областями -->
+    <map name="ukraine-map">
+        <!-- Київ -->
+        <area shape="circle" coords="775,610,35" href="https://uk.wikipedia.org/wiki/Київ" alt="Київ" target="_blank">
+
+        <!-- Львів -->
+        <area shape="circle" coords="370,720,35" href="https://uk.wikipedia.org/wiki/Львів" alt="Львів" target="_blank">
+    </map>
+
+</body>
+</html>
