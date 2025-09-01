@@ -95,7 +95,7 @@
           allowfullscreen></iframe>
 
   <!-- Міні-гра: Вгадай число -->
-  <h2>🎮 Міні-гра: Вгадай число</h2>
+  <h2>Міні-гра: Вгадай число</h2>
   <p>Я загадав число від 1 до 100.</p>
   <input type="number" id="guessInput" placeholder="Введіть число">
   <button onclick="checkGuess()">Вгадати</button>
@@ -111,7 +111,7 @@
       let result = document.getElementById("result");
 
       if (guess == secret) {
-        result.innerText = "🎉 Ви вгадали!";
+        result.innerText = "Ви вгадали!";
       } else if (guess > secret) {
         result.innerText = "Моє число менше!";
       } else if (guess < secret) {
