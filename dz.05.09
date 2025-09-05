@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Кав’ярня Vorobey</title>
+  <style>
+    body {
+      font-family: Vorobey, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header, footer {
+      background: #6b4226;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1, h2 {
+      color: #6b4226;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    table, th, td {
+      border: 1px solid #444;
+    }
+
+    th, td {
+      padding: 10px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 8px 15px;
+      background: #6b4226;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #4b2e1c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Кав’ярня "Vorobey"</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Головна</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#order">Замовлення</a></li>
+        <li><a href="#about">Про нас</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Головна сторінка -->
+  <section id="home">
+    <h2>Ласкаво просимо</h2>
+    <p>Кавʼярня у центрі міста. У нас є свіжа кава та багато десертів.</p>
+    <p>Перейдіть у <a href="#menu">меню</a>, щоб дізнатись більше.</p>
+    <p><a href="#footer">Вниз</a></p>
+  </section>
+
+  <!-- Сторінка з таблицею -->
+  <section id="menu">
+    <h2>Меню</h2>
+    <table>
+      <caption>Меню кав’ярні Vorobey</caption>
+      <tr>
+        <th>Назва</th>
+        <th>Опис</th>
+        <th>Розмір</th>
+        <th>Ціна</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Капучино</td>
+        <td rowspan="2">Кава з молоком</td>
+        <td>Малий</td>
+        <td>50 грн</td>
+      </tr>
+      <tr>
+        <td>Велике</td>
+        <td>100грн</td>
+      </tr>
+      <tr>
+        <td>Еспресо</td>
+        <td>Чорна кава</td>
+        <td>-</td>
+        <td>100грн</td>
+      </tr>
+      <tr>
+        <td>Чізкейк</td>
+        <td colspan="2">Десерт</td>
+        <td>100 грн</td>
+      </tr>
+    </table>
+    <p><a href="#home">Нагору</a></p>
+  </section>
+
+  <!-- Сторінка з формою -->
+  <section id="order">
+    <h2>Зробити замовлення</h2>
+    <form>
+      <label>Ваше ім’я:
+        <input type="text" name="name" required>
+      </label>
+
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Обрати напій:
+        <select name="drink">
+          <option>Капучино</option>
+          <option>Еспресо</option>
+          <option>Лате</option>
+        </select>
+      </label>
+
+      <p>Додатково:</p>
+      <label><input type="checkbox" name="extra" value="milk"> Додати молока</label>
+      <label><input type="checkbox" name="extra" value="sugar"> Без цукру</label>
+
+      <label>Коментар:
+        <textarea name="comment" rows="4"></textarea>
+      </label>
+
+      <button type="submit">Надіслати</button>
+    </form>
+    <p><a href="#home">Нагору</a></p>
+  </section>
+
+  <!-- Додаткова сторінка -->
+  <section id="about">
+    <h2>Про кавʼярню</h2>
+    <p>Я відкрию кав’ярню у 2030 році.</p>
+
+    <h3 id="team">Моя команда</h3>
+    <p>У мене працюють найкращі баристи.</p>
+
+    <p><a href="#home">Повернутись нагору</a></p>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; 2025 Кав’ярня "Vorobey"</p>
+  </footer>
+</body>
+</html>
