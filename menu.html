@@ -1,0 +1,134 @@
+<DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню ресторану</title>
+    <style>
+        body  {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .section-header {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: center;
+        }
+        .special-offer {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+        .vegan {
+            background-color: #8bc34a;
+            color: white;
+            font-weight: bold;
+        }
+        .note {
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+   <h1 style="text-align: center; padding: 20px;">Меню ресторану</h1>
+
+   <table>
+       <!--Сніданок-->
+       <tr>
+          <td colspan="3" class="section-header">Сніданок</td>
+          </tr>
+        <tr>
+            <th>Назва страви</th>
+            <th>Опис</th>
+            <th>Ціна</th>
+        </tr>
+        <tr>
+            <td>Омлет з овочами</td>
+            <td>Класичний омлет з томатами, шпинатом та перцем</td>
+            <td>1000 грн</td>
+        </tr>
+        <tr>
+        	<td>Салат</td>
+        	<td>Салат зі свіжих соковитих овочів</td>
+        	<td>500 грн</td>
+        </tr>
+        <tr>
+            <td class="special-offer">Круасан з шоколадом</td>
+            <td>Свіжий круасан з шоколадом всередині</td>
+            <td>100 грн</td>
+        </tr>
+        <!-- Обід -->
+        <tr>
+            <td colspan="3" class="section-header">Обід</td>
+        </tr>
+        <tr>
+            <th>Назва страви</th>
+            <th>Опис</th>
+            <th>Ціна</th>
+        </tr>
+        <tr>
+            <td>Червоний Борщ</td>
+            <td>Соковитий український червоний борщ</td>
+            <td>1000000000 грн</td>
+        </tr>
+        <tr>
+            <td class="vegan">Салат з кіноа</td>
+            <td>Вегетаріанський салат з кіноа, авокадо і помідорами</td>
+            <td>30000 грн</td>
+        </tr>
+        <tr>
+            <td>Паста з морепродуктами</td>
+            <td>Паста з креветками, мідіями та соусом песто</td>
+            <td>1500 грн</td>
+        </tr>
+
+        <!-- Вечеря -->
+        <tr>
+            <td colspan="3" class="section-header">Вечеря</td>
+        </tr>
+        <tr>
+            <th>Назва страви</th>
+            <th>Опис</th>
+            <th>Ціна</th>
+        </tr>
+        <tr>
+            <td>Стейк з яловичини</td>
+            <td>Соковитий стейк середньої прожарки</td>
+            <td>2500 грн</td>
+        </tr>
+        <tr>
+            <td>Запечена риба</td>
+            <td>Риба, запечена з овочами та лимоном</td>
+            <td>2000 грн</td>
+        </tr>
+        <tr>
+            <td class="special-offer">Лазанья з грибами</td>
+            <td>Тепла лазанья з соусом бешамель та грибами</td>
+            <td>1000 грн</td>
+        </tr>
+    </table>
+
+    <div class="note" style="text-align: center;">
+        <p>Примітки: Всі страви можуть містити алергени. Просимо звернути увагу на позначки вегетаріанських та веганських опцій.</p>
+    </div>
